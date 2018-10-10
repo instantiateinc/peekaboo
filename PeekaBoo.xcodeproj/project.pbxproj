@@ -12,6 +12,7 @@
 		0A475711216E8DE200DCC992 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A47570F216E8DE100DCC992 /* Main.storyboard */; };
 		0A475713216E8DF100DCC992 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A475712216E8DF100DCC992 /* Assets.xcassets */; };
 		0A475716216E8DF100DCC992 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A475714216E8DF100DCC992 /* LaunchScreen.storyboard */; };
+		0A47571E216E9AF500DCC992 /* IIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47571D216E9AF500DCC992 /* IIHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		0A475712216E8DF100DCC992 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A475715216E8DF100DCC992 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A475717216E8DF100DCC992 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A47571D216E9AF500DCC992 /* IIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IIHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				0A47570B216E8DE100DCC992 /* AppDelegate.swift */,
+				0A47571D216E9AF500DCC992 /* IIHelper.swift */,
 				0A47570D216E8DE100DCC992 /* ViewController.swift */,
 				0A47570F216E8DE100DCC992 /* Main.storyboard */,
 				0A475712216E8DF100DCC992 /* Assets.xcassets */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A47571E216E9AF500DCC992 /* IIHelper.swift in Sources */,
 				0A47570E216E8DE100DCC992 /* ViewController.swift in Sources */,
 				0A47570C216E8DE100DCC992 /* AppDelegate.swift in Sources */,
 			);
@@ -292,7 +296,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Instantiate-inc.PeekaBoo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -310,7 +314,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Instantiate-inc.PeekaBoo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
