@@ -27,7 +27,7 @@ class PeekaBooViewController: UIViewController {
     
     // MARK:- Actions
     @IBAction func performMagic(_ sender: UIButton) {
-        print("doing magic")
+        
     }
     
     
