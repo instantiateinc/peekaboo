@@ -22,4 +22,32 @@ class IIHelper {
             view.layer.cornerRadius = view.frame.height / 2
         }
     }
+    
+    static func changeAlpha(of views: [UIView], to alpha: CGFloat) {
+        views.forEach { (view) in
+            view.alpha = alpha
+        }
+    }
+}
+
+
+// MARK:- Animations
+extension IIHelper {
+    
+    static func animate(_ firstBlock: @escaping ()->(), _ secondBlock: (()->())?, completion: (()->())?) {
+        UIView.animate(withDuration: 0.7, animations: {
+            firstBlock()
+        }) { (finished) in
+            UIView.animate(withDuration: 0.7, animations: {
+                if let secondBlock = secondBlock {
+                    secondBlock()
+                }
+            }, completion: { (finished) in
+                if let completion = completion {
+                    completion()
+                }
+            })
+        }
+    }
+    
 }
