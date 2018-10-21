@@ -9,11 +9,14 @@
 
 // MARK:- Frameworks
 import UIKit
+import AVFoundation
 
 
 // MARK:- ViewController Class
 class PeekaBooViewController: UIViewController {
 
+    // MARK:- Property
+    let peekaBoo = PeekaBoo()
     
     // MARK:- Outlets
     @IBOutlet weak var magicButton: UIButton! {
@@ -27,6 +30,7 @@ class PeekaBooViewController: UIViewController {
     
     // MARK:- Actions
     @IBAction func performMagic(_ sender: UIButton) {
+        peekaBoo.speak("Booooo, You can't see me anymore more!")
         IIHelper.animate({
             sender.isEnabled = false
             IIHelper.changeAlpha(of: [self.peekaBooImageView], to: 0.1)
@@ -38,11 +42,10 @@ class PeekaBooViewController: UIViewController {
     }
     
     
-
     // MARK:- Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //peekaBoo.speak("Welcome! My name is PeekaBoo - and I see you!!")
     }
 }
 

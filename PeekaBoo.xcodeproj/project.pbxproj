@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A23377E217D37330010F90E /* PeekaBoo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A23377D217D37330010F90E /* PeekaBoo.swift */; };
 		0A47570C216E8DE100DCC992 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47570B216E8DE100DCC992 /* AppDelegate.swift */; };
 		0A47570E216E8DE100DCC992 /* PeekaBooViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47570D216E8DE100DCC992 /* PeekaBooViewController.swift */; };
 		0A475711216E8DE200DCC992 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A47570F216E8DE100DCC992 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A23377D217D37330010F90E /* PeekaBoo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeekaBoo.swift; sourceTree = "<group>"; };
 		0A475708216E8DE100DCC992 /* PeekaBoo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeekaBoo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A47570B216E8DE100DCC992 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A47570D216E8DE100DCC992 /* PeekaBooViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeekaBooViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				0A47570B216E8DE100DCC992 /* AppDelegate.swift */,
 				0A47571D216E9AF500DCC992 /* IIHelper.swift */,
 				0A47570D216E8DE100DCC992 /* PeekaBooViewController.swift */,
+				0A23377D217D37330010F90E /* PeekaBoo.swift */,
 				0A4ECB84217A461C00FB649A /* PeekaBooNavigationViewController.swift */,
 				0A47570F216E8DE100DCC992 /* Main.storyboard */,
 				0A475712216E8DF100DCC992 /* Assets.xcassets */,
@@ -145,6 +148,7 @@
 				0A47570E216E8DE100DCC992 /* PeekaBooViewController.swift in Sources */,
 				0A4ECB85217A461C00FB649A /* PeekaBooNavigationViewController.swift in Sources */,
 				0A47570C216E8DE100DCC992 /* AppDelegate.swift in Sources */,
+				0A23377E217D37330010F90E /* PeekaBoo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
