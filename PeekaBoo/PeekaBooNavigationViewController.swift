@@ -6,11 +6,15 @@
 //  Copyright © 2018 Instantiate inc. All rights reserved.
 //
 
+// MARK:- Frameworks
 import UIKit
 
+
+// MARK:- PeekaBooNavigationViewController Class
 class PeekaBooNavigationViewController: UINavigationController {
 
     
+    // MARK:- Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationBar.layer.shadowColor = #colorLiteral(red: 0.1298420429, green: 0.1298461258, blue: 0.1298439503, alpha: 1).cgColor
