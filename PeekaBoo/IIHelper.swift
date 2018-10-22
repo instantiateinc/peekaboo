@@ -34,7 +34,7 @@ class IIHelper {
 // MARK:- Animations
 extension IIHelper {
     
-    static func animate(_ firstBlock: @escaping ()->(), _ secondBlock: (()->())?, completion: (()->())?) {
+    static func animate(_ firstBlock: @escaping ()->(), _ secondBlock: (()->())? = nil, completion: (()->())? = nil) {
         UIView.animate(withDuration: 0.7, animations: {
             firstBlock()
         }) { (finished) in

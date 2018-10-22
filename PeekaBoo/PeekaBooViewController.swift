@@ -45,6 +45,9 @@ class PeekaBooViewController: UIViewController {
     // MARK:- Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        IIHelper.animate ({
+            IIHelper.changeAlpha(of: [self.peekaBooImageView], to: 1.0)
+        })
         //peekaBoo.speak("Welcome! My name is PeekaBoo - and I see you!!")
     }
 }
