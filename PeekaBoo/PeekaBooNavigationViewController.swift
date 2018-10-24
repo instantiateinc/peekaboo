@@ -21,5 +21,6 @@ class PeekaBooNavigationViewController: UINavigationController {
         navigationBar.layer.shadowOffset = CGSize(width: 0, height: 5)
         navigationBar.layer.shadowOpacity = 0.8
         navigationBar.layer.shadowRadius = 5
+        navigationBar.clipsToBounds = false
     }
 }

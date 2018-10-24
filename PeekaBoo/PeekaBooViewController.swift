@@ -30,7 +30,7 @@ class PeekaBooViewController: UIViewController {
     
     // MARK:- Actions
     @IBAction func performMagic(_ sender: UIButton) {
-        peekaBoo.speak("Booooo, You can't see me anymore more!")
+        peekaBoo.speak("Booooo, You can't see me anymore!")
         IIHelper.animate({
             sender.isEnabled = false
             IIHelper.changeAlpha(of: [self.peekaBooImageView], to: 0.1)
@@ -48,6 +48,7 @@ class PeekaBooViewController: UIViewController {
         IIHelper.animate ({
             IIHelper.changeAlpha(of: [self.peekaBooImageView], to: 1.0)
         })
+        peekaBooImageView.tintColor = #colorLiteral(red: 0.476841867, green: 0.5048075914, blue: 1, alpha: 1)
         //peekaBoo.speak("Welcome! My name is PeekaBoo - and I see you!!")
     }
 }

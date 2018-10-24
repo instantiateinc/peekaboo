@@ -46,9 +46,9 @@
                                     <action selector="performMagic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UkQ-Xh-qKo"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PeekaBoo" translatesAutoresizingMaskIntoConstraints="NO" id="SDs-6n-yuv">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PeekaBoo" translatesAutoresizingMaskIntoConstraints="NO" id="SDs-6n-yuv">
                                 <rect key="frame" x="62.666666666666657" y="147" width="249.99999999999997" height="250"/>
-                                <color key="tintColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="9CB-P4-A97"/>
                                     <constraint firstAttribute="height" constant="250" id="M0u-zn-0j2"/>
