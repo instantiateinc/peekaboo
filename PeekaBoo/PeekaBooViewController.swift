@@ -27,6 +27,7 @@ class PeekaBooViewController: UIViewController {
     
     @IBOutlet weak var peekaBooImageView: UIImageView!
     
+    @IBOutlet weak var peekaBooSegmentedControl: PeekaBooSegmentedControl!
     
     // MARK:- Actions
     @IBAction func performMagic(_ sender: UIButton) {
@@ -48,7 +49,8 @@ class PeekaBooViewController: UIViewController {
         IIHelper.animate ({
             IIHelper.changeAlpha(of: [self.peekaBooImageView], to: 1.0)
         })
-        peekaBooImageView.tintColor = #colorLiteral(red: 0.476841867, green: 0.5048075914, blue: 1, alpha: 1)
+        peekaBooImageView.tintColor = PeekaBoo.colors[.green]
+        peekaBooSegmentedControl.updateControl()
         //peekaBoo.speak("Welcome! My name is PeekaBoo - and I see you!!")
     }
 }

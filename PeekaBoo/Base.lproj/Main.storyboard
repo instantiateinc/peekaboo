@@ -47,21 +47,48 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PeekaBoo" translatesAutoresizingMaskIntoConstraints="NO" id="SDs-6n-yuv">
-                                <rect key="frame" x="62.666666666666657" y="147" width="249.99999999999997" height="250"/>
-                                <color key="tintColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="87.666666666666686" y="136" width="200" height="200"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="9CB-P4-A97"/>
-                                    <constraint firstAttribute="height" constant="250" id="M0u-zn-0j2"/>
+                                    <constraint firstAttribute="width" constant="200" id="9CB-P4-A97"/>
+                                    <constraint firstAttribute="height" constant="200" id="M0u-zn-0j2"/>
                                 </constraints>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jbs-lO-3dj" customClass="PeekaBooSegmentedControl" customModule="PeekaBoo" customModuleProvider="target">
+                                <rect key="frame" x="8" y="111" width="50" height="250"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="H5X-iN-J8g"/>
+                                    <constraint firstAttribute="width" constant="50" id="lGF-hu-xSF"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isControlVertical" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="commaDelimitedButtonTitles" value=",,,,"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectorColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="selectorCornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="selectorBorderWidth">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectorBorderColor">
+                                        <color key="value" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="buttonImage" value="circle "/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Jbs-lO-3dj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="3uB-NP-XUm"/>
                             <constraint firstItem="SDs-6n-yuv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4td-eE-6Wp"/>
                             <constraint firstItem="SDs-6n-yuv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LSX-Xt-mbN"/>
                             <constraint firstItem="oe1-Wq-RfF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XEu-aO-7uC"/>
-                            <constraint firstItem="SDs-6n-yuv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-64" id="jLh-3N-XnN"/>
+                            <constraint firstItem="SDs-6n-yuv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="jLh-3N-XnN"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oe1-Wq-RfF" secondAttribute="bottom" constant="32" id="u4J-Gw-Hpc"/>
+                            <constraint firstItem="Jbs-lO-3dj" firstAttribute="centerY" secondItem="SDs-6n-yuv" secondAttribute="centerY" id="xgA-1t-mol"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -69,6 +96,7 @@
                     <connections>
                         <outlet property="magicButton" destination="oe1-Wq-RfF" id="gjw-mM-GbL"/>
                         <outlet property="peekaBooImageView" destination="SDs-6n-yuv" id="dIR-Tj-Nta"/>
+                        <outlet property="peekaBooSegmentedControl" destination="Jbs-lO-3dj" id="cSl-ah-8VV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -79,5 +107,6 @@
     <resources>
         <image name="Bolt " width="100" height="100"/>
         <image name="PeekaBoo" width="250" height="250"/>
+        <image name="circle " width="35" height="35"/>
     </resources>
 </document>
