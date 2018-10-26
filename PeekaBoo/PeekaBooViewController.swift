@@ -30,6 +30,14 @@ class PeekaBooViewController: UIViewController {
     @IBOutlet weak var peekaBooSegmentedControl: PeekaBooSegmentedControl!
     
     // MARK:- Actions
+    
+    
+    @IBAction func peekaBooSegmentedControlValueChanged(_ sender: PeekaBooSegmentedControl) {
+        if let colorName = PeekaBoo.ColorName(rawValue: sender.selectedButtonIndex) {
+            peekaBooImageView.tintColor = PeekaBoo.colors[colorName]
+        }
+    }
+    
     @IBAction func performMagic(_ sender: UIButton) {
         peekaBoo.speak("Booooo, You can't see me anymore!")
         IIHelper.animate({
@@ -49,8 +57,9 @@ class PeekaBooViewController: UIViewController {
         IIHelper.animate ({
             IIHelper.changeAlpha(of: [self.peekaBooImageView], to: 1.0)
         })
-        peekaBooImageView.tintColor = PeekaBoo.colors[.green]
+        //peekaBooImageView.tintColor = PeekaBoo.colors[.green]
         peekaBooSegmentedControl.updateControl()
+        peekaBooSegmentedControlValueChanged(peekaBooSegmentedControl)
         //peekaBoo.speak("Welcome! My name is PeekaBoo - and I see you!!")
     }
 }
